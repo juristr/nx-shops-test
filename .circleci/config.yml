@@ -32,4 +32,9 @@ workflows:
 
   ci:
     jobs:
-      - main
+      - main:
+          filters:
+            branches:
+              only:
+                - main
+                - /^pull\/.*$/
