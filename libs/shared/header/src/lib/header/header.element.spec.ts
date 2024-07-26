@@ -5,14 +5,12 @@ describe('HeaderElement', () => {
   let headerElement: HeaderElement;
 
   beforeEach(() => {
-    headerElement = document.createElement(
-      'nx-shops-header'
-    ) as HeaderElement;
+    headerElement = document.createElement('nx-shops-header') as HeaderElement;
     headerElement.connectedCallback();
   });
 
   it('can be created', () => {
-    expect(headerElement).toBeTruthy();
+    expect(headerElement).toBeFalsy();
   });
 
   it('should display the application title', () => {
